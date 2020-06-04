@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="resultViewController" customModule="calApp" customModuleProvider="target">
+            <connections>
+                <outlet property="resultLabel" destination="OBL-87-YYu" id="0Se-E3-R35"/>
+                <outlet property="timeLabel" destination="GTf-Xi-Z1o" id="Ihb-wv-XpQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBL-87-YYu">
+                    <rect key="frame" x="10" y="244" width="394" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTf-Xi-Z1o">
+                    <rect key="frame" x="10" y="392" width="394" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgD-Yb-Qa2">
+                    <rect key="frame" x="135.5" y="540" width="143" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="もう一度トライ">
+                        <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="moveToStartView:" destination="-1" eventType="touchUpInside" id="pOX-PI-EBs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GTf-Xi-Z1o" secondAttribute="trailing" constant="10" id="2QY-B7-SWe"/>
+                <constraint firstItem="SgD-Yb-Qa2" firstAttribute="top" secondItem="GTf-Xi-Z1o" secondAttribute="bottom" constant="100" id="Luc-GZ-gwK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OBL-87-YYu" secondAttribute="trailing" constant="10" id="MtB-3y-X8m"/>
+                <constraint firstItem="SgD-Yb-Qa2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O1g-Xm-g99"/>
+                <constraint firstItem="GTf-Xi-Z1o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="O9Q-ve-JSN"/>
+                <constraint firstItem="OBL-87-YYu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="cBJ-Zg-mVL"/>
+                <constraint firstItem="OBL-87-YYu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="gAl-Uo-XNs"/>
+                <constraint firstItem="GTf-Xi-Z1o" firstAttribute="top" secondItem="OBL-87-YYu" secondAttribute="bottom" constant="100" id="wrn-tU-uoZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="139"/>
+        </view>
+    </objects>
+</document>
